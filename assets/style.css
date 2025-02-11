@@ -495,6 +495,7 @@ a {
   width: 100%;
   max-width: 1220px;
   position: relative; /* Space for pagination */
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -565,6 +566,10 @@ a {
     left: 0;
     width: 100%;
     padding: 20px;
+  }
+
+  .nav-link {
+    color: #fff !important;
   }
 
   .hero-text {
