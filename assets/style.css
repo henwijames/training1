@@ -18,7 +18,7 @@ a {
 
 /* Section 1 */
 .hero {
-  padding: 0 10%;
+  padding: 0 20px;
   height: 100vh;
   background: #f5f5f5;
   background-image: url("img/hero-bg-img.jpg");
@@ -65,13 +65,12 @@ a {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 70%;
+  height: 90%;
 }
 
 .hero-content .hero-content-container {
   display: flex;
   align-items: center;
-  margin-top: 100px;
 }
 
 .hero-content .hero-text {
@@ -80,19 +79,20 @@ a {
 }
 
 .hero-content .hero-text h1 {
-  font-size: 3rem;
+  font-size: 38px;
   color: var(--text-color);
   margin-bottom: 20px;
   width: 100%;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 .hero-content .hero-text p {
   color: var(--text-color);
-  font-size: 1.2rem;
+  font-size: 16px;
   margin-bottom: 50px;
   width: 90%;
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .hero-content .hero-text .hero-button .button {
@@ -118,20 +118,17 @@ a {
 
 /* Section 2: Services */
 .services {
-  padding: 0 10%;
-  height: 150vh;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
   position: relative;
   background-image: url("img/sec2-bg-img.jpg");
   background-size: cover;
   background-position: center;
-}
-
-.services .bg {
-  position: absolute;
-  top: -90px;
-  left: 0;
-  width: 100%;
-  z-index: -1;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .services .services-text {
@@ -148,7 +145,6 @@ a {
   width: 90%;
   font-weight: 700;
   margin-bottom: 20px;
-  margin-top: 270px;
 }
 
 .services .services-text .aim {
@@ -189,7 +185,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 300px;
 }
 
 .services-offers .offers-card {
@@ -294,8 +289,7 @@ a {
 
 /* Section 3 */
 .reasons {
-  padding: 0 10%;
-  height: 150vh;
+  padding: 50px 20px;
   position: relative;
   background-image: url("img/sec3-bg-img.jpg");
   background-size: cover;
@@ -308,9 +302,7 @@ a {
   align-items: center;
   justify-content: center;
 }
-.reasons .reasons_text p {
-  margin-top: 270px;
-}
+
 .reasons .reasons_text h1 {
   font-size: 3rem;
   color: var(--text-color);
@@ -357,7 +349,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
 .reasons .reasons-btn a {
@@ -368,7 +359,6 @@ a {
   border-radius: 8px;
   text-transform: uppercase;
   font-weight: 600;
-  margin-top: 60px;
 }
 
 .footer {
@@ -388,7 +378,7 @@ a {
 .footer-content1 .footer-text {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
 
 .footer-content1 .footer-text p {
@@ -485,10 +475,9 @@ a {
 /* Swiper */
 .swiper-container {
   width: 100%;
-  max-width: 1220px;
   position: relative; /* Space for pagination */
   overflow: hidden;
-  padding-bottom: 280px;
+  margin-top: 100px;
 }
 
 .swiper-slide {
@@ -512,15 +501,6 @@ a {
 /* Position next button */
 .swiper-button-next {
   right: -10px; /* Adjust right position */
-}
-
-/* Adjust pagination */
-.swiper-pagination {
-  position: absolute;
-  bottom: 0; /* Move it higher if needed */
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
 }
 
 /* Change pagination bullet color */
@@ -552,23 +532,19 @@ a {
 }
 
 @media (max-width: 1200px) {
-  .navbar-collapse {
-    background: var(--bg-color) !important;
-  }
-
   .nav-link {
-    color: #fff !important;
+    color: #000 !important;
   }
 
   .hero-text {
     text-align: center;
   }
   .hero-text .first-text {
-    font-size: 42px !important;
+    font-size: 32px !important;
     text-align: center;
   }
   .hero-text .second-text {
-    font-size: 32px !important;
+    font-size: 22px !important;
     width: 100% !important;
   }
 
@@ -579,12 +555,12 @@ a {
   /* Services */
 
   .services-text h1 {
-    font-size: 24px !important;
+    font-size: 32px !important;
     margin-top: 120px !important;
   }
 
   .services-text .description {
-    font-size: 14px !important;
+    font-size: 22px !important;
   }
 
   .services-offers .offers-card {
@@ -606,10 +582,6 @@ a {
 
   .reasons_text h1 {
     font-size: 32px !important;
-  }
-
-  .reasons-btn {
-    margin-top: -30px !important;
   }
 
   .reasons .reasons-btn a {
@@ -647,20 +619,21 @@ a {
   }
 }
 @media (max-width: 768px) {
-  .nav-link {
-    color: #fff !important;
-  }
-
   .hero-text {
     text-align: center;
   }
   .hero-text .first-text {
-    font-size: 32px !important;
+    font-size: 28px !important;
     text-align: center;
   }
   .hero-text .second-text {
-    font-size: 16px !important;
+    font-size: 14px !important;
     width: 100% !important;
+  }
+
+  .hero-button a {
+    display: flex;
+    justify-content: center;
   }
 
   .hero-img {
@@ -681,36 +654,40 @@ a {
   .services-offers .offers-card {
     width: 100%;
     margin-bottom: 20px;
+    padding: 40px;
   }
   .services-offers .offers-card2 {
     width: 100%;
     margin-bottom: 20px;
+    padding: 40px;
   }
   .services-offers .offers-card3 {
     width: 100%;
     margin-bottom: 20px;
+    padding: 40px;
+  }
+  .services .services-btn a {
+    width: 100%;
+  }
+  .reasons_card .reason-img img {
+    width: 60px;
+    margin-bottom: 5px;
   }
 
   .reasons_card .reason-img img {
     width: 60px;
+    margin-bottom: 5px;
+  }
+  .reasons_card p {
+    font-size: 14px;
+  }
+  .reasons .reasons-btn a {
+    width: 100%;
+    text-align: center;
   }
 
   .reasons_text h1 {
-    font-size: 32px !important;
-  }
-
-  .reasons-btn {
-    margin-top: -30px !important;
-  }
-
-  .reasons .reasons-btn a {
-    text-decoration: none;
-    padding: 10px 60px;
-    background: var(--bg-color);
-    color: #fff;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-weight: 600;
+    font-size: 24px !important;
   }
 
   .footer-content1 {
@@ -731,6 +708,14 @@ a {
     flex-direction: column;
   }
 
+  .footer-content1 .footer-text p {
+    font-size: 14px;
+  }
+  .footer-content1 .footer-text h1 {
+    font-size: 24px;
+    width: 100%;
+  }
+
   .footer-content2 .links {
     gap: 20px;
     flex-direction: column;
@@ -749,6 +734,9 @@ a {
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding: 30px 20px;
+  }
   .swiper-button-next,
   .swiper-button-prev {
     font-size: 16px !important; /* Make arrows even smaller */
