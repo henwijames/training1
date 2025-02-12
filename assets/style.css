@@ -118,10 +118,7 @@ a {
 
 /* Section 2: Services */
 .services {
-  padding: 50px 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  padding: 150px 20px 50px;
   width: 100%;
   position: relative;
   background-image: url("img/sec2-bg-img.jpg");
@@ -129,6 +126,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  height: 100vh;
 }
 
 .services .services-text {
@@ -289,7 +287,7 @@ a {
 
 /* Section 3 */
 .reasons {
-  padding: 50px 20px;
+  padding: 200px 20px 50px;
   position: relative;
   background-image: url("img/sec3-bg-img.jpg");
   background-size: cover;
@@ -475,9 +473,13 @@ a {
 /* Swiper */
 .swiper-container {
   width: 100%;
-  position: relative; /* Space for pagination */
+  position: absolute; /* Space for pagination */
   overflow: hidden;
   margin-top: 100px;
+  bottom: -250px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
 }
 
 .swiper-slide {
@@ -553,7 +555,10 @@ a {
   }
 
   /* Services */
-
+  .services {
+    height: 120vh;
+    padding-top: 50px;
+  }
   .services-text h1 {
     font-size: 32px !important;
     margin-top: 120px !important;
