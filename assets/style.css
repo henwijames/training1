@@ -622,6 +622,13 @@ a {
     flex-direction: column;
     align-items: start;
   }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 16px !important; /* Make arrows even smaller */
+    width: 50px !important;
+    height: 25px !important;
+  }
 }
 @media (max-width: 768px) {
   .hero-text {
@@ -646,7 +653,9 @@ a {
   }
 
   /* Services */
-
+  .services {
+    height: 100vh;
+  }
   .services-text h1 {
     font-size: 24px !important;
     margin-top: 120px !important;
@@ -727,6 +736,13 @@ a {
     align-items: start;
   }
 
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 16px !important; /* Make arrows even smaller */
+    width: 40px !important;
+    height: 25px !important;
+  }
+
   .swiper-button-next::after,
   .swiper-button-prev::after {
     font-size: 30px !important; /* Smaller arrow icons */
@@ -745,7 +761,7 @@ a {
   .swiper-button-next,
   .swiper-button-prev {
     font-size: 16px !important; /* Make arrows even smaller */
-    width: 25px !important;
+    width: 40px !important;
     height: 25px !important;
   }
 
