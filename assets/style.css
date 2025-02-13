@@ -16,9 +16,13 @@ a {
   text-decoration: none;
 }
 
-/* Section 1 */
-.hero {
-  padding: 0 20px;
+header {
+  z-index: 1000;
+  transition: background 0.1s ease-in-out;
+}
+
+main {
+  width: 100%;
   height: 100vh;
   background: #f5f5f5;
   background-image: url("img/hero-bg-img.jpg");
@@ -26,7 +30,6 @@ a {
   background-position: center;
   position: relative;
   background-repeat: no-repeat;
-  z-index: 1000;
 }
 
 .nav-link {
@@ -37,35 +40,27 @@ a {
   color: #fff !important;
 }
 
-.hero nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  width: 100%;
-}
-
 .nav-links {
   display: flex;
   align-items: center;
 }
-
-.hero nav .menu ul {
+/* Section 1 */
+.hero {
   display: flex;
-  list-style: none;
+  align-items: center;
+  width: 100%;
 }
+
+.hero-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .button {
   background: var(--bg-color) !important;
   text-transform: uppercase;
   color: #fff !important;
-}
-
-/* Hero Content */
-.hero-content {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 90%;
 }
 
 .hero-content .hero-content-container {
@@ -78,7 +73,7 @@ a {
   flex-direction: column;
 }
 
-.hero-content .hero-text h1 {
+.hero-text h1 {
   font-size: 38px;
   color: var(--text-color);
   margin-bottom: 20px;
@@ -87,15 +82,15 @@ a {
   font-weight: 700;
 }
 
-.hero-content .hero-text p {
+.hero-text p {
   color: var(--text-color);
   font-size: 16px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   width: 90%;
   line-height: 1.5;
 }
 
-.hero-content .hero-text .hero-button .button {
+.hero-button .button {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
@@ -104,26 +99,16 @@ a {
   border-radius: 5px;
   transition: 0.3s;
   font-weight: 600;
-  margin-top: 20px;
-}
-
-.hero-content .hero-img {
-  width: 100%;
-  padding: 20px;
-}
-
-.hero-content .hero-img img {
-  width: 100%;
 }
 
 /* Section 2: Services */
 .services {
-  padding: 150px 20px 50px;
   width: 100%;
+  padding: 150px 0 50px;
   position: relative;
   background-image: url("img/sec2-bg-img.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 10% 90%;
   background-repeat: no-repeat;
   position: relative;
   height: 100vh;
@@ -194,9 +179,7 @@ a {
   transition: 0.3s;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  z-index: 1;
 }
 .services-offers .offers-card2 {
   width: 28%;
@@ -207,9 +190,7 @@ a {
   transition: 0.3s;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  z-index: 1;
 }
 .services-offers .offers-card3 {
   width: 28%;
@@ -218,48 +199,18 @@ a {
   background: #fff;
   border-radius: 20px;
   transition: 0.3s;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  z-index: 1;
 }
 
-.services .services-offers .offers-card .offers-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-}
-.services .services-offers .offers-card2 .offers-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-}
-.services .services-offers .offers-card3 .offers-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-/* offers content 1 */
-.services .services-offers .offers-card .offers-content .icon img {
-  width: 70px;
-}
 .services .services-offers .offers-card .offers-content .title h1 {
   font-weight: 600;
   font-size: 1.2rem;
 }
 .services .services-offers .offers-card .offers-content .description p {
   text-align: center;
-  line-height: 2;
-}
-
-/* offers content 2 */
-.services .services-offers .offers-card2 .offers-content .icon img {
-  width: 50px;
 }
 .services .services-offers .offers-card2 .offers-content .title h1 {
   font-weight: 600;
@@ -267,12 +218,6 @@ a {
 }
 .services .services-offers .offers-card2 .offers-content .description p {
   text-align: center;
-  line-height: 2;
-}
-
-/* offers content 3 */
-.services .services-offers .offers-card3 .offers-content .icon img {
-  width: 70px;
 }
 .services .services-offers .offers-card3 .offers-content .title h1 {
   font-weight: 600;
@@ -280,14 +225,13 @@ a {
 }
 .services .services-offers .offers-card3 .offers-content .description p {
   text-align: center;
-  line-height: 2;
 }
 
 /* Section 2 End */
 
 /* Section 3 */
 .reasons {
-  padding: 200px 20px 50px;
+  padding: 200px 0 200px;
   position: relative;
   background-image: url("img/sec3-bg-img.jpg");
   background-size: cover;
@@ -359,13 +303,7 @@ a {
   font-weight: 600;
 }
 
-.footer {
-  padding: 0 10%;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-content1 {
+.contactus {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -373,28 +311,29 @@ a {
   position: relative;
 }
 
-.footer-content1 .footer-text {
+.contactus .contactus-text {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.footer-content1 .footer-text p {
+.contactus .contactus-text p {
   color: var(--bg-color);
   font-weight: 600;
+  margin-bottom: 0;
 }
 
-.footer-content1 .footer-text h1 {
+.contactus .contactus-text h1 {
   font-size: 2rem;
   width: 70%;
 }
 
-.footer-content1 .footer-text .footer-btn {
+.contactus .contactus-text .contactus-btn {
   display: flex;
   align-items: center;
 }
 
-.footer-content1 .footer-text a {
+.contactus .contactus-text a {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--bg-color);
@@ -407,15 +346,21 @@ a {
   font-weight: 600;
 }
 
-.footer-content1 .footer-text a i {
+.contactus-content .contactus-text a i {
   font-size: 12px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer-content2 {
   display: flex;
   gap: 100px;
-  align-items: center;
-  padding: 50px 0;
+  flex-direction: column;
+  padding-top: 50px;
 }
 
 .footer-content2 .logo .brand-logo {
@@ -425,6 +370,7 @@ a {
 .footer-content2 .logo .socmed {
   width: 100px;
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -534,6 +480,9 @@ a {
 }
 
 @media (max-width: 1200px) {
+  header {
+    background: white;
+  }
   .nav-link {
     color: #000 !important;
   }
@@ -556,8 +505,8 @@ a {
 
   /* Services */
   .services {
-    height: 120vh;
-    padding-top: 50px;
+    height: 140vh;
+    padding-top: 0px;
   }
   .services-text h1 {
     font-size: 32px !important;
@@ -582,7 +531,7 @@ a {
   }
 
   .reasons_card .reason-img img {
-    width: 60px;
+    width: 80px;
   }
 
   .reasons_text h1 {
@@ -603,8 +552,8 @@ a {
     flex-direction: column;
   }
 
-  .footer-content1 .footer-logo img {
-    width: 400px; /* Adjust width as needed */
+  .contactus .contactus-logo img {
+    width: 300px; /* Adjust width as needed */
     max-width: 100%; /* Makes it responsive */
     position: absolute;
     top: 50%;
@@ -613,14 +562,20 @@ a {
     z-index: -2;
   }
 
-  .footer-content2 {
+  .footer-content2 .content {
     flex-direction: column;
+    gap: 20px;
   }
 
-  .footer-content2 .links {
-    gap: 20px;
+  .footer-content2 .content .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    align-items: start;
+  }
+  .footer-content2 .content .logo .socmed {
+    display: flex;
+    align-items: center;
   }
 
   .swiper-button-next,
@@ -655,14 +610,17 @@ a {
   /* Services */
   .services {
     height: 100vh;
+    background-position: 50% 50%;
   }
   .services-text h1 {
     font-size: 24px !important;
     margin-top: 120px !important;
+    width: 100% !important;
   }
 
   .services-text .description {
     font-size: 14px !important;
+    width: 100% !important;
   }
 
   .services-offers .offers-card {
@@ -684,13 +642,8 @@ a {
     width: 100%;
   }
   .reasons_card .reason-img img {
-    width: 60px;
-    margin-bottom: 5px;
-  }
-
-  .reasons_card .reason-img img {
-    width: 60px;
-    margin-bottom: 5px;
+    width: 80px;
+    margin-bottom: 10px;
   }
   .reasons_card p {
     font-size: 14px;
@@ -702,10 +655,6 @@ a {
 
   .reasons_text h1 {
     font-size: 24px !important;
-  }
-
-  .footer-content1 {
-    flex-direction: column;
   }
 
   .footer-content1 .footer-logo img {
@@ -730,10 +679,11 @@ a {
     width: 100%;
   }
 
+  .footer-content2 .logo {
+    margin-bottom: 20px;
+  }
   .footer-content2 .links {
     gap: 20px;
-    flex-direction: column;
-    align-items: start;
   }
 
   .swiper-button-next,
@@ -758,6 +708,15 @@ a {
   .hero {
     padding: 30px 20px;
   }
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-content2 .links {
+    flex-direction: column;
+    align-items: start;
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     font-size: 16px !important; /* Make arrows even smaller */
