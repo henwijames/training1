@@ -61,6 +61,11 @@ main {
   background: var(--bg-color) !important;
   text-transform: uppercase;
   color: #fff !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #008c6a !important;
 }
 
 .hero-content .hero-content-container {
@@ -77,7 +82,7 @@ main {
   font-size: 38px;
   color: var(--text-color);
   margin-bottom: 20px;
-  width: 100%;
+  width: 69%;
   line-height: 1.2;
   font-weight: 700;
 }
@@ -99,6 +104,11 @@ main {
   border-radius: 5px;
   transition: 0.3s;
   font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-button .button:hover {
+  background-color: #008c6a;
 }
 
 /* Section 2: Services */
@@ -162,6 +172,11 @@ main {
   padding: 8px 50px;
   font-weight: 600;
   border-radius: 5px;
+  transition: all 0.1s ease-in-out;
+}
+
+.services .services-btn a:hover {
+  background-color: #f6f6f6;
 }
 
 .services-offers {
@@ -301,6 +316,11 @@ main {
   border-radius: 8px;
   text-transform: uppercase;
   font-weight: 600;
+  transition: all 0.1s ease-in-out;
+}
+
+.reasons .reasons-btn a:hover {
+  background-color: #008c6a;
 }
 
 .contactus {
@@ -344,6 +364,11 @@ main {
   gap: 10px;
   align-items: center;
   font-weight: 600;
+  transition: all 0.1s ease-in-out;
+}
+
+.contactus .contactus-text a:hover {
+  background: rgb(237, 237, 237);
 }
 
 .contactus-content .contactus-text a i {
@@ -493,6 +518,7 @@ main {
   .hero-text .first-text {
     font-size: 32px !important;
     text-align: center;
+    width: 100% !important;
   }
   .hero-text .second-text {
     font-size: 22px !important;
@@ -592,15 +618,19 @@ main {
   .hero-text .first-text {
     font-size: 28px !important;
     text-align: center;
+    width: 100% !important;
   }
   .hero-text .second-text {
     font-size: 14px !important;
     width: 100% !important;
   }
 
-  .hero-button a {
+  .hero-button {
     display: flex;
     justify-content: center;
+  }
+  .hero-button a {
+    width: 100%;
   }
 
   .hero-img {
