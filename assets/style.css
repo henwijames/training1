@@ -132,7 +132,7 @@ main {
   justify-content: center;
 }
 
-.services .services-text h1 {
+.services .services-text h2 {
   font-size: 3rem;
   color: var(--text-color);
   text-align: center;
@@ -221,21 +221,21 @@ main {
   align-items: center;
 }
 
-.services .services-offers .offers-card .offers-content .title h1 {
+.services .services-offers .offers-card .offers-content .title h2 {
   font-weight: 600;
   font-size: 1.2rem;
 }
 .services .services-offers .offers-card .offers-content .description p {
   text-align: center;
 }
-.services .services-offers .offers-card2 .offers-content .title h1 {
+.services .services-offers .offers-card2 .offers-content .title h2 {
   font-weight: 600;
   font-size: 1.2rem;
 }
 .services .services-offers .offers-card2 .offers-content .description p {
   text-align: center;
 }
-.services .services-offers .offers-card3 .offers-content .title h1 {
+.services .services-offers .offers-card3 .offers-content .title h2 {
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -261,7 +261,7 @@ main {
   justify-content: center;
 }
 
-.reasons .reasons_text h1 {
+.reasons .reasons_text h2 {
   font-size: 3rem;
   color: var(--text-color);
   text-align: center;
@@ -344,7 +344,7 @@ main {
   margin-bottom: 0;
 }
 
-.contactus .contactus-text h1 {
+.contactus .contactus-text h2 {
   font-size: 2rem;
   width: 70%;
 }
