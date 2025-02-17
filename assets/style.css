@@ -50,6 +50,7 @@ main {
   display: flex;
   align-items: center;
   width: 100%;
+  padding: 50px 20px;
 }
 
 .hero-container {
@@ -74,25 +75,25 @@ main {
   align-items: center;
 }
 
-.hero-content .hero-text {
+.hero-text {
   display: flex;
   flex-direction: column;
+  gap: 10px !important;
 }
 
 .hero-text h1 {
   font-size: 38px;
   color: var(--text-color);
-  margin-bottom: 20px;
   width: 69%;
   line-height: 1.2;
   font-weight: 700;
+  margin: 0;
 }
 
 .hero-text p {
   color: var(--text-color);
   font-size: 16px;
-  margin-bottom: 20px;
-  width: 90%;
+  width: 50%;
   line-height: 1.5;
 }
 
@@ -115,7 +116,7 @@ main {
 /* Section 2: Services */
 .services {
   width: 100%;
-  padding: 150px 0 50px;
+  padding: 150px 20px 50px;
   position: relative;
   background-image: url("img/sec2-bg-img.jpg");
   background-size: cover;
@@ -247,7 +248,7 @@ main {
 
 /* Section 3 */
 .reasons {
-  padding: 200px 0 200px;
+  padding: 200px 20px 50px;
   position: relative;
   background-image: url("img/sec3-bg-img.jpg");
   background-size: cover;
@@ -311,7 +312,7 @@ main {
 
 .reasons .reasons-btn a {
   text-decoration: none;
-  padding: 10px 70px;
+  padding: 8px 50px;
   background: var(--bg-color);
   color: #fff;
   border-radius: 10px;
@@ -430,6 +431,10 @@ main {
 .footer-content2 .links .link .title-links a {
   text-decoration: none;
   color: var(--text-color);
+  transition: all 0.2s ease;
+}
+.footer-content2 .links .link .title-links a:hover {
+  color: var(--bg-color);
 }
 
 .footer .horizontal-line {
@@ -455,7 +460,6 @@ main {
   bottom: -250px;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1000;
 }
 
 .swiper-slide {
@@ -539,7 +543,7 @@ main {
     height: 140vh;
     padding-top: 0px;
   }
-  .services-text h1 {
+  .services-text h2 {
     font-size: 32px !important;
     margin-top: 120px !important;
   }
@@ -565,7 +569,7 @@ main {
     width: 80px;
   }
 
-  .reasons_text h1 {
+  .reasons_text h2 {
     font-size: 32px !important;
   }
 
@@ -617,12 +621,14 @@ main {
   }
 }
 @media (max-width: 768px) {
+  .hero {
+    padding: 30px 20px;
+  }
   .hero-text {
     text-align: center;
   }
   .hero-text .first-text {
     font-size: 28px !important;
-    text-align: center;
     width: 100% !important;
   }
   .hero-text .second-text {
@@ -642,8 +648,9 @@ main {
   .services {
     height: 100vh;
     background-position: 50% 50%;
+    padding: 30px 20px;
   }
-  .services-text h1 {
+  .services-text h2 {
     font-size: 24px !important;
     margin-top: 120px !important;
     width: 100% !important;
@@ -684,18 +691,18 @@ main {
     text-align: center;
   }
 
-  .reasons_text h1 {
+  .reasons_text h2 {
     font-size: 24px !important;
   }
 
   .contactus {
-    padding: 30px 0;
+    padding: 30px 20px;
 
     .contactus-text {
       p {
         text-align: center;
       }
-      h1 {
+      h2 {
         font-size: 24px;
         text-align: center;
         width: 100%;
@@ -706,6 +713,9 @@ main {
         justify-content: center;
       }
     }
+  }
+  .footer {
+    padding: 30px 20px;
   }
 
   .footer-content1 .footer-logo img {
@@ -725,7 +735,7 @@ main {
   .footer-content1 .footer-text p {
     font-size: 14px;
   }
-  .footer-content1 .footer-text h1 {
+  .footer-content1 .footer-text h2 {
     font-size: 24px;
     width: 100%;
   }
