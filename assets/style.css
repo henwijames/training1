@@ -758,7 +758,7 @@ main {
     padding: 30px 20px;
   }
   .swiper-container {
-    margin-top: 100px;
+    margin-top: 200px;
   }
 
   .footer {
@@ -783,5 +783,11 @@ main {
 
   .swiper-button-next {
     right: 0; /* Adjust position */
+  }
+}
+
+@media (max-width: 390px) {
+  .swiper-container {
+    margin-top: 100px;
   }
 }
